@@ -2,7 +2,7 @@ let maxNumber = prompt("Ecrivez un chiffre maximal SVP.")
 maxNumber = parseInt(maxNumber)
 
 do {
-switch (Number.isNaN(maxNumber)) {
+switch (Number.isInteger(maxNumber)) {
     case true :
         maxNumber= prompt("Ceci n'est pas un chiffre. Merci d'entrer un chiffre correct")
         maxNumber= parseInt(maxNumber)
@@ -16,7 +16,7 @@ switch (Number.isNaN(maxNumber)) {
         attempt = prompt(`Devine le juste prix compris entre 0 et ${maxNumber}`)
         attempt = parseInt(attempt)
         do {
-            switch (Number.isNaN(attempt)) {
+            switch (Number.isInteger(attempt)) {
                 case false :
 
                     if (attempt > randomNumber) {
